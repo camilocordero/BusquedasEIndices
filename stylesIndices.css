@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap');
+body {
+    background-color: #F6F6F6;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Hind', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h3{
+    font-size: medium;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+* {
+    font-weight: 400;
+}
+
+button {
+    background-color: #168039;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    transition-duration: 0.3s;
+}
+
+.container {
+    width: min(80%, 110rem);
+    margin: 0 auto;
+    /* border: 0.1rem solid #212121; */
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.24);
+
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-bottom: 10px;
+}
+
+/* .container_img{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.container_img > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.containerIcicle{
+    width: auto;
+    padding: 0 10%;
+}

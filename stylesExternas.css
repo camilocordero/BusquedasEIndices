@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap');
+
+.container {
+    width: min(80%, 110rem);
+    margin: 0 auto;
+    /* border: 0.1rem solid #212121; */
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.24);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+body {
+    background-color: #F6F6F6;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Hind', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+* {
+    font-weight: 400;
+}
+
+button {
+    background-color: #168039;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #45BF55;
+}
+
+.contenidoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu>div {
+    margin: 8px 0;
+}
+
+input,
+select {
+    border-radius: 5px;
+    border: 0.1px solid #212121;
+}
+
+
+
+.customTable {
+    width: 40%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #168039;
+    border-style: solid;
+    color: #000000;
+
+    text-align: center;
+}
+
+.customTable td,
+.customTable th {
+    border-width: 1px;
+    border-color: #168039;
+    border-style: solid;
+    padding: 5px;
+}
+
+.customTable th{
+    font-weight: 700;
+}
+
+.customTable th {
+    background-color: #45BF55;
+}
+

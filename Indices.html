@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indices</title>
+    <link rel="stylesheet" href="stylesIndices.css">
+</head>
+
+<body>
+    <article class="container">
+        <h1>Índices</h1>
+        <section class="formulario">
+            <label>Numero de registros: </label>
+            <input type="number" id="numRegistros" min="0" value="120000"/>
+            <label>Tamaño de los bloques: </label>
+            <input type="number" id="tamBloques" min="0" value="1024"/>
+            <label>Longitud de los bloques: </label>
+            <input type="number" id="longBloques" min="0" value="150"/>
+            <label>Longitud de indices: </label>
+            <input type="number" id="longIndices" min="0" value="18"/>
+            <label> Seleccione un tipo de estructura de indices: </label>
+            <select id="searchList">
+                <option value="Primario">Primario</option>
+                <option value="Secundario">Secundario</option>
+                <option value="MultinivelPrimario">Multinivel primario</option>
+                <option value="MultinivelSecundario">Multinivel secundario</option>
+            </select>
+        </section>
+        <button onclick="submitInfo()">EJECUTAR</button>
+
+        <section>
+            <h3>Resultados</h3>
+            <p id="p_registrosPorBloque">Registros por bloque: <span id="registrosPorBloque"></span></p>
+            <p id="p_numeroDeBloques">Número de bloques: <span id="numeroDeBloques"></span></p>
+            <p id="p_registrosInidcePorBloque">Registros índice por bloque: <span id="registrosInidcePorBloque"></span></p>
+            
+            <p id="p_numeroDeBloquesIndice">Número de bloques índice: <span id="numeroDeBloquesIndice"></span></p>
+            
+            <p id="p_numeroDeBloquesIndiceSecundarios">Número de bloques índice secundarios: <span id="numeroDeBloquesIndiceSecundarios"></span></p>
+
+            <p id="p_numeroDeBloquesIndicePrimario">Número de bloques índice primario: <span id="numeroDeBloquesIndicePrimario"></span></p>
+            <p id="p_numeroEstructurasMultinivelPrimario">Número estructuras multinivel primario: <span id="numeroEstructurasMultinivelPrimario"></span></p>
+
+            <p id="p_numeroDeBloquesIndiceSecundariosMultinivel">Número de bloques índice secundarios multinivel: <span id="numeroDeBloquesIndiceSecundariosMultinivel"></span></p>
+            <p id="p_numeroEstructurasMultinivelSecunario">Número estructuras multinivel secunario: <span id="numeroEstructurasMultinivelSecundario"></span></p>
+        </section>
+
+
+
+        <div class="containerIcicle" id="containerIcicle"></div>
+
+        <!-- <div class="container_img">
+            <img src="./img/primario.PNG" alt="Primario" srcset="">
+            <p>Texto de imagen</p>
+        </div> -->
+        
+
+        
+    </article>
+
+
+    
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="Indices.js"></script>
+</body>
+
+</html>

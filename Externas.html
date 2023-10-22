@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busquedas Externas</title>
+  <link rel="stylesheet" href="stylesExternas.css">
+</head>
+
+<body>
+  <article class="container">
+    <div class="contenidoContainer">
+      <h1 class="tituloContainer">Busquedas externas</h1>
+      <section class="menu">
+        <div>
+          <label>Tamaño del arreglo (10 o 100): </label>
+          <input type="number" id="arrayLong" />
+          <button onclick="createButton()">Crear Arreglo</button>
+        </div>
+
+        <div>
+          <label> Seleccione un tipo de busqueda: </label>
+          <select id="searchList">
+            <option value="Secuencial">Secuencial</option>
+            <option value="Binario">Binario</option>
+            <option value="HashModulo">Hash Modulo</option>
+            <option value="HashCuadrado">Hash Cuadrado</option>
+            <option value="HashPlegamiento">Hash Plegamiento</option>
+            <option value="HashTruncamiento">Hash Truncamiento</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Ingresar Clave (Maximo 4 digitos): </label>
+          <input type="number" id="setKey" />
+          <button onclick="setButton()">Insertar Clave</button>
+        </div>
+
+        <div>
+          <label>Clave a buscar: </label>
+          <input type="number" id="Key" />
+          <button onclick="searchKeyButton()">Buscar Clave</button>
+        </div>
+
+      </section>
+      
+      <div>
+        <label>Eliminar Clave: </label>
+        <input type="number" id="Deletekey" />
+        <button onclick="deleteKeyButton()">Eliminar Clave</button>
+      </div>
+      
+      
+      <h3 id="resultadoBusqueda"></h3>
+    </div>
+    <table class="customTable", id="tableArray"></table>
+    
+  </article>
+</body>
+<script src="Externas.js"></script>
+
+</html>
